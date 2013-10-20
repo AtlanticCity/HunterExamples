@@ -1,0 +1,15 @@
+from random import *
+
+adjective1 = ["zesty", "molten", "aromatic", "baked", "bitter", "boiled", "blended", "burnt", "caramelized", "buttered", "tangy"]
+adjective2 = ["ginger", "glazed", "grilled", "honey", "marinated", "minty", "organic", "pepper", "poached", "roasted", "vanilla"]
+food = ["chicken", "noodles", "curry", "salad", "steak", "fish", "eggs", "pizza", "potatoes", "cake", "rice"]
+number = randint(1,10)
+
+for i in range(1,len(adjective1)+1):
+    adj1 = randint(0,len(adjective1) - 1)
+    adj2 = randint(0,len(adjective2) - 1)
+    foodnum = randint(0,len(food) - 1)
+    print("#",i,".", adjective1[adj1], adjective2[adj2], food[foodnum])
+    del(adjective1[adj1])
+    del(adjective2[adj2])
+    del(food[foodnum])
