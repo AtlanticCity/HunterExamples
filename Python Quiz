@@ -1,0 +1,79 @@
+#First create a variable to keep track of how many questions right
+score = 0
+
+#Ask the user the first question
+print("What day of the week is it today?")
+print("a) Friday")
+print("b) Sunday")
+print("c) Wednesday")
+print("d) Tuesday")
+
+#Ask the user for the answer and store it as a new variable
+answer = raw_input("Please answer a, b, c, or d")
+
+#If the user answered b, give him or her a point by increasing score by 1 and print "Correct!"
+if answer == "b":
+    score = score + 1
+    print("Correct!")
+#ELSE (if the answer was anything besides b), tell the user the correct answer was b
+else:
+    print("Sorry! The correct answer was b.")
+
+#Ask the next question
+print("What day is Christmas?")
+print("a) December 25")
+print("b) January 25")
+print("c) December 24")
+print("d) December 35")
+
+#We can store the user's answer in the same variable as before because we don't care about the previous question anymore
+answer = raw_input("Please answer a, b, c, or d")
+
+if answer == "a":
+    score = score + 1
+    print("Correct!")
+else:
+    print("Sorry! The correct answer was a.")
+
+#Repeat for as many questions as you want!
+
+print("Where are we right now?")
+print("a) Japan")
+print("b) England")
+print("c) Canada")
+print("d) United States")
+
+answer = raw_input("Please answer a, b, c, or d")
+
+if answer == "d":
+    score = score + 1
+    print("Correct!")
+else:
+    print("Sorry! The correct answer was d.")
+
+print("What kind of pets do you have?")
+print("a) Monkeys")
+print("b) Dogs")
+print("c) Fish")
+print("d) Cats")
+
+answer = raw_input("Please answer a, b, c, or d")
+
+if answer == "b":
+    score = score + 1
+    print("Correct!")
+else:
+    print("Sorry! The correct answer was b.")
+
+print("You got", score, "questions correct!")
+
+if score == 0:
+    print("Sorry! Better luck next time!")
+if score == 1:
+    print("At least you got one question right!")
+if score == 2:
+    print("You got half of the questions right! That's not bad...")
+if score == 3:
+    print("Good job! Just one away from a perfect score!")
+if score == 4:
+    print("Wow! You got every question right!")
