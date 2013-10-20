@@ -1,0 +1,13 @@
+#First create an array
+list = []
+
+#Set the variable to start the while loop (I set it to an empty string)
+addition = ""
+
+while addition != "done":
+    addition = raw_input("What would you like to add to the shopping list?")
+    list.append(addition)
+#When the user enters "done," the loop is over
+
+for i in range (0, len(list)):
+    print(list[i])
